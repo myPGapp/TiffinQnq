@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TIFFINQNQ</string>
+    <string name="page_under_development">Page under development</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="Doc">Doc. uploaded by</string>
+    <string name="action_send">Send</string>
+    <string name="colon" />
+    <string name="doubt_quota_expired" />
+    <string name="doubt_quota_expired_body" />
+    <string name="Welcome">Welcome</string>
+    <string name="default_notification_channel_id">default</string>
+    <string name="ok" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="current_users">Current Users</string>
+    <string name="users_by_vendor_id">Users by vendor ID</string>
+</resources>

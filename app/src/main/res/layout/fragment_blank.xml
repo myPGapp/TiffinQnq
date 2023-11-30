@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tiffin.tiffinqnq.BlankFragment"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="40dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="#B7D2E8"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="#B7D2E8"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tiffinqnqlogo">
+
+                    </ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#EDE496"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Redefining people's food habits"
+                        android:textSize="20sp"
+
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_gravity="center"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/thali1"
+                >
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Book Meal"
+                        android:layout_weight="1"
+                        android:id="@+id/btnbookmeal"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="3dp"
+                       />
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Users"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:id="@+id/usersNo"
+                        android:layout_marginEnd="3dp"
+                        android:textSize="15sp"
+                        android:visibility="visible"
+                        />
+                    <!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                        -->
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Pay"
+                        android:layout_weight="1"
+                        android:id="@+id/btnpay"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/txtaddress"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Share and follow us"
+                    android:textSize="16sp"
+                    android:background="#54DFDAA8"
+                    android:textColor="@color/black"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:id="@+id/socialmedialink"
+                    android:padding="10dp"
+
+
+                    >
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/fbLink"
+                        android:src="@drawable/ic_fb">
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/twitterLink"
+                        android:src="@drawable/ic_twitter">
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/linkedinLink"
+                        android:src="@drawable/ic_linkedin">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/instagramLink"
+                        android:src="@drawable/ic_instagram">
+
+                    </ImageView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/txtContact"
+                        android:layout_height="wrap_content"
+                        android:text="New Delhi"
+                        android:textSize="20sp"
+
+                        android:textColor="@color/black"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/contact"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Phone: +919873080062"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            />
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:id="@+id/btncall"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+
+                            android:src="@drawable/ic_baseline_call_24"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/txtemail"
+                        android:layout_height="wrap_content"
+                        android:text="email: shyamdeo@tiffinqnq.com"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

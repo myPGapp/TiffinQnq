@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tiffin.tiffinqnq">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES"
+        android:minSdkVersion="33" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="com.google.android.c2dm.permission.Send" />
+    <uses-permission android:name="com.google.android.c2dm.permission.Receive" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TiffinQnq">
+        <activity
+            android:name=".SendNot.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Notification.NotSend"
+            android:exported="false" />
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logotiffin" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SendNotify"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivityy"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Allotvendorid"
+            android:exported="false" />
+        <activity
+            android:name=".RvUserswithid"
+            android:exported="false" />
+        <activity
+            android:name=".UsersByVendorId"
+            android:exported="false" />
+        <activity
+            android:name=".VendorIdSpinner"
+            android:exported="false" />
+        <activity
+            android:name=".UploadProfileImage"
+            android:exported="false" />
+        <activity
+            android:name=".ViewMyComplaints"
+            android:exported="false" />
+        <activity
+            android:name=".ViewComplaints"
+            android:exported="false" />
+        <activity
+            android:name=".AdminView"
+            android:exported="false" />
+        <activity
+            android:name=".FoodPreference1"
+            android:exported="false" />
+        <activity
+            android:name=".DatePicker1"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerComplaints"
+            android:exported="false" />
+        <activity
+            android:name=".RvSuggestions"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerSuggestion"
+            android:exported="false" />
+        <activity
+            android:name=".ComplaintOthers"
+            android:exported="false" />
+        <activity
+            android:name=".ComplaintPayments"
+            android:exported="false" />
+        <activity
+            android:name=".ComplaintQuantity"
+            android:exported="false" />
+        <activity
+            android:name=".ComplaintQuality"
+            android:exported="false" />
+        <activity
+            android:name=".ComplaintDelivery"
+            android:exported="false" />
+        <activity
+            android:name=".DropdownComplaint"
+            android:exported="false" />
+        <activity
+            android:name=".OtpUpdateProfileAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".ViewCustomerPlan"
+            android:exported="false" />
+        <activity
+            android:name=".UploadProfileData"
+            android:exported="false" />
+        <activity
+            android:name=".SocialMedia"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterByEmail"
+            android:exported="false" />
+        <activity
+            android:name=".PhoneHome"
+            android:exported="false" />
+        <activity
+            android:name=".OtpVerify"
+            android:exported="false" />
+        <activity
+            android:name=".OtpUpdateProfile"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn"
+            android:exported="false" />
+        <activity
+            android:name=".SendNotification.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomCalendar"
+            android:exported="false" />
+        <activity
+            android:name=".PhoneOTP1"
+            android:exported="false" />
+        <activity
+            android:name=".EditTextDialog"
+            android:exported="false" />
+        <activity
+            android:name=".LaunchActivityOtp"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".SendNotificationPack.MyFireBaseMessagingService"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".SendNotificationPack.MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".SendNotification.MessageClass"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.Receive">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".SendNot.PushNotificationService"
+            android:enabled="true"
+            android:exported="false"
+            >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FirebaseMessagingService"
+            android:exported="false"
+            android:permission="TODO"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.MESSAGING_SERVICE" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

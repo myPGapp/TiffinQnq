@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:id="@+id/main_menu" android:checkableBehavior="single">
+        <item android:id="@+id/menu_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home"/>
+        <item android:id="@+id/menu_profile"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="Update Profile"/>
+
+        <item android:id="@+id/menu_customer"
+            android:icon="@drawable/ic_baseline_person_outline_24"
+            android:title="@string/current_users"/>
+        <item android:title="@string/users_by_vendor_id"
+            android:id="@+id/menu_userbyvid"
+            android:icon="@drawable/baseline_supervised_user_circle_24"
+            />
+        <item android:id="@+id/menu_mymealplan"
+            android:icon="@drawable/ic_baseline_computer_24"
+            android:title="My meal plan"/>
+        <item android:id="@+id/menu_contactus"
+            android:icon="@drawable/ic_baseline_call_24"
+            android:title=" Contact us"/>
+    </group>
+    <group android:id="@+id/extras" android:checkableBehavior="single">
+
+        <item android:id="@+id/Logout"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Logout"/>
+        <item android:id="@+id/appVersion"
+            android:title="App Version"
+            
+            />
+
+    </group>
+</menu>

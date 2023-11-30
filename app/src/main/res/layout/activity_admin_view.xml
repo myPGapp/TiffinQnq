@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_marginTop="20dp"
+    tools:context=".AdminView">
+    <TextView
+        android:id="@+id/textView"
+        android:padding="3dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_sample2"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llcb"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+            <CheckBox
+                android:id="@+id/sevendayplan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7 day plan "
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:button="@drawable/check_box_selector"
+                android:background="#A3BDCFDD"
+                android:checked="false" />
+            <CheckBox
+                android:id="@+id/fifteendayplan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 day plan "
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:button="@drawable/check_box_selector"
+                android:background="#A3BDCFDD"
+                android:checked="false" />
+            <CheckBox
+                android:id="@+id/thirtydayplan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 day plan "
+                android:layout_weight="1"
+                android:button="@drawable/check_box_selector"
+                android:background="#A3BDCFDD"
+                android:checked="false" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#95D1EC">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <CheckBox
+                    android:id="@+id/cbdinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dinner only "
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:button="@drawable/check_box_selector"
+                    android:checked="false" />
+                <TextView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_grey"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <CheckBox
+                    android:id="@+id/cblunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lunch only "
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:button="@drawable/check_box_selector"
+                    android:checked="false" />
+                <TextView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_green"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <CheckBox
+                    android:id="@+id/cblunchdinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lunch + Dinner "
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:button="@drawable/check_box_selector"
+                    android:checked="false" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            >
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="Tick for customise days booking"
+                android:id="@+id/cbcustom"
+                android:button="@drawable/check_box_selector"
+                android:textSize="20sp"
+                android:background="#A3F6DEB5"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Mark absent"
+            android:id="@+id/cbabsent"
+            android:button="@drawable/check_box_selector"
+            android:textSize="20sp"
+            android:background="#A3F6DEB5"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvinitialdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btninitialdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="select initial date"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btnmarkabsent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="select date to mark absent"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btnhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="home"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</LinearLayout>
